@@ -37,6 +37,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    cursor: progress;
 }
 
 .btn-primary:hover{
@@ -60,16 +61,21 @@ nav ul{
     align-items: center;
     gap: 48px;
 }
+
 nav ul>li{
     list-style: none;
 
 }
-nav ul>li >a {
+nav ul>li >a ,.cart{
     text-decoration: none;
     color: #8987A1;
     font-size: 1rem;
     font-weight: 400;
     line-height: 24px; 
+}
+
+.cart:hover{
+    color: #252432;
 }
 
 nav li :hover{
@@ -80,16 +86,13 @@ nav li :hover{
 .banner-container{
     display: flex;
     align-items: center;
-  justify-content: space-between;
-}
-.banner-left-part{
-
+    justify-content: space-between;
 }
 .banner-title{
     color: #E95A08;
     font-size: 4rem;
     font-weight: 700;
-    width: 517px;
+    max-width: 517px;
 }
 .banner-title span{
     color: #000;
@@ -98,9 +101,77 @@ nav li :hover{
     color: rgba(0, 0, 0, 0.50);
     font-size: 22px;
     font-weight: 400;
-    width: 570px ;
+    max-width: 570px ;
     margin-top: 13px;
 }
 .banner-right-part img{
     width: 100%;
+    display: block;
+}
+
+
+/* Responsive Styles For Mobile Device */
+@media screen and (max-width:576px) {
+
+    /* Navbar */
+    nav{
+        padding: 40px 28px;
+
+    }
+
+    nav ul>li{
+        display: none;
+
+    }
+    .cart{
+       color: #000;
+       font-size: 18px;
+    }
+    .cart i{
+        margin-right: 5px;
+    }
+    nav img{
+        width: 100px;
+    }
+
+    /* Banner */
+    .banner-container{
+        flex-direction: column-reverse;
+        
+    }
+    .banner-left-part{
+        margin: 16px 28px;
+    }
+    .banner-title{
+        font-size: 1.5rem;
+        max-width: 191px;
+    }
+    .banner-des{
+        font-size: 14px;
+       
+    }
+}
+/* Responsive Styles For Medium Device */
+
+@media screen  and (min-width : 576px) and (max-width:992px){
+    /* Navbar */
+    nav{
+        padding: 50px 30px;
+    }
+    nav ul{
+        gap: 20px;
+    }
+
+    /* banner */
+    .banner-container{
+        margin:50px 30px;
+    }
+    
+    
+    .banner-title{
+        font-size: 2rem;
+    }
+    .banner-des{
+        font-size: 16px;
+    }
 }
