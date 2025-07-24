@@ -31,17 +31,23 @@
 
 /* Button */
 .btn-primary{
-    /* display: flex; */
     background: #E95A08;
-    padding: 26px 50px;
+    text-align: center;
     justify-content: center;
     align-items: center;
+    align-self:stretch;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 26px 50px ;
+    width: 100%;
     gap: 10px;
     cursor: progress;
 }
 
 .btn-primary:hover{
-    background-color: cornsilk;
+    background-color: darkkhaki;
 }
 
 /* Header Style */
@@ -109,13 +115,73 @@ nav li :hover{
     display: block;
 }
 
+/* main */
+main{
+    background-color: #F5F8FF;
+}
+  /* Our Plants Styles */
+
+
+.plants-title{
+    color: #E95A08;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 120px;
+}
+
+.plants-title span{
+    color: #000;
+}
+
+.plants-description{
+    color: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    margin:16px auto;
+    font-size: 22px;
+    font-weight: 400;
+    max-width: 888px;
+}
+
+.plants-cards-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 80px;
+    gap: 30px;
+}
+
+.card{
+    align-items: center;
+    text-align: center;
+
+}
+.card img{
+    width: 100%;
+}
+.card-title{
+    color: #111;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 33px;
+    margin-top: 20px;
+}
+.card-des{
+    color: #111;
+    font-size: 22px;
+    font-weight: 700;
+    line-height:  33px ;
+    margin: 20px 0;
+}
+
 
 /* Responsive Styles For Mobile Device */
 @media screen and (max-width:576px) {
 
     /* Navbar */
     nav{
-        padding: 40px 28px;
+        padding: 30px 28px;
+        align-items: center;
+        
 
     }
 
@@ -140,7 +206,7 @@ nav li :hover{
         
     }
     .banner-left-part{
-        margin: 16px 28px;
+        margin:30px 28px;
     }
     .banner-title{
         font-size: 1.5rem;
@@ -150,6 +216,31 @@ nav li :hover{
         font-size: 14px;
        
     }
+      /* Our Plants Styles */
+      .our-plants-section{
+         padding: 65px 20px;
+      }
+      .plants-title{
+        padding-top: 0px;
+        font-size: 1.5rem;
+      }
+
+      .plants-description{
+        font-size: 14px;
+      }
+
+      .plants-cards-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        margin-top: 50px;
+      }
+      .card-des{
+        margin: 0;
+      }
+      .card .btn-primary{
+        padding: 14px 20px;
+      }
 }
 /* Responsive Styles For Medium Device */
 
@@ -164,7 +255,7 @@ nav li :hover{
 
     /* banner */
     .banner-container{
-        margin:50px 30px;
+        padding:50px 30px;
     }
     
     
@@ -174,4 +265,25 @@ nav li :hover{
     .banner-des{
         font-size: 16px;
     }
+    /* Our Plants Styles */
+    .our-plants-section{
+        margin: 0 20px;
+    }
+
+    .plants-title{
+        font-size: 2rem;
+        padding-top: 70px;
+    }
+    .plants-description{
+        font-size: 16px;
+        width: 600px;
+        
+    }
+    .plants-cards-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        margin-top: 50px;
+    }
+    
 }
