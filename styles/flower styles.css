@@ -268,33 +268,66 @@ main{
         font-size: 14px;
        
     }
-      /* Our Plants Styles */
-      .our-plants-section{
-         padding: 65px 20px;
-      }
-      .plants-title{
+    /* Our Plants Styles */
+    .our-plants-section{
+        padding: 65px 20px;
+    }
+
+    .plants-title{
         padding-top: 0px;
         font-size: 1.5rem;
-      }
+    }
 
-      .plants-description{
+    .plants-description{
         font-size: 14px;
-      }
+    }
 
-      .plants-cards-container{
+    .plants-cards-container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 10px;
         margin-top: 50px;
-      }
-      .card-des{
+    }
+    .card-des{
         margin: 0;
-      }
-      .card .btn-primary{
+    }
+    .card .btn-primary{
         padding: 14px 20px;
-      }
+    }
 
-      /* Flower Lover Section Styles */
+    /* Flower Lover Section Styles */
+    .flower-lover-section{
+        padding: 50px 20px;
+    }
+    .flower-lover-container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .flower-lover-images-container{
+        width: 100%;
+    }
+    .flower-badge-img{
+        display: none;
+    }
+
+    .flower-lover-contents{
+        width: 100%;
+    }
+    .flower-store-title{
+        font-size: 1.5rem;
+    }
+
+    .flower-store-descriptions{
+        font-size: 14px;
+        line-height: normal;
+        max-width:100%;
+    }
+
+    .flower-store-descriptions> li{
+        margin:16px 20px;
+    }
+
 }
 /* Responsive Styles For Medium Device */
 
@@ -341,4 +374,33 @@ main{
     }
     
     /* Flower Lover Section Styles */
+
+    .flower-lover-section{
+        padding: 50px 30px;
+    }
+
+    .flower-lover-container{
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .flower-badge-img{
+        display: none;
+    }
+
+    .flower-store-title{
+        font-size: 2rem;
+    }
+
+    .flower-store-descriptions{
+        font-size: 16px;
+        line-height: normal;
+        max-width:100%;
+    }
+
+    .flower-store-descriptions> li{
+        margin:16px 20px;
+    }
+
 }
