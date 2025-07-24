@@ -24,7 +24,7 @@
 
 }
 .container{
-    max-width: 1440px;
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -173,6 +173,58 @@ main{
     margin: 20px 0;
 }
 
+/* Flower Lover Section Styles */
+.flower-lover-section{
+   padding: 180px 0;
+}
+.flower-lover-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 200px;
+}
+
+.flower-lover-images-container{
+    position: relative;
+    width: 50%;
+
+}
+
+.flower-store-img{
+    width: 100%; 
+}
+
+.flower-badge-img{
+    box-shadow:rgba(0, 0, 0, 0.25);
+    position: absolute;
+    width: 286px;
+    /* height: 286px; */
+    top: -100px;
+    right: -100px;
+}
+.flower-lover-contents{
+    align-items: left;
+    width: 50%;
+    
+ 
+}
+.flower-store-title{
+    color: #000;
+    font-size: 50px;
+    font-weight: 700;
+    max-width: 540px;
+}
+.flower-store-descriptions{
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 22px;
+    font-weight: 400;
+    max-width: 480px;
+    line-height: 30px;
+}
+.flower-store-descriptions> li{
+   margin:50px 0;
+}
 
 /* Responsive Styles For Mobile Device */
 @media screen and (max-width:576px) {
@@ -197,7 +249,7 @@ main{
         margin-right: 5px;
     }
     nav img{
-        width: 100px;
+        max-width: 100px;
     }
 
     /* Banner */
@@ -241,6 +293,8 @@ main{
       .card .btn-primary{
         padding: 14px 20px;
       }
+
+      /* Flower Lover Section Styles */
 }
 /* Responsive Styles For Medium Device */
 
@@ -276,7 +330,7 @@ main{
     }
     .plants-description{
         font-size: 16px;
-        width: 600px;
+        max-width: 600px;
         
     }
     .plants-cards-container{
@@ -286,4 +340,5 @@ main{
         margin-top: 50px;
     }
     
+    /* Flower Lover Section Styles */
 }
