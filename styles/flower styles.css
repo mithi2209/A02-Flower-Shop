@@ -254,7 +254,7 @@ main{
     text-align: center;
     font-size: 22px;
     font-weight: 400;
-    max-width: 888px;
+    max-width: 860px;
     margin: 16px auto;
  }
 .latest-deal-container{
@@ -264,12 +264,14 @@ main{
     width: 100%; */
     padding-top: 80px;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 30px;
 
 }
 
 /* left-1 */
+/*  */
 
 .latest-deal-left-1{
     background: linear-gradient(0deg,rgba(0,0,0,0.40) 0% , rgba(0,0,0,0.40) 100%) ,
@@ -333,9 +335,10 @@ main{
 .latest-deal-right{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), 
     url("../B12A02-Responsive-Flowers/assets/deal-zabo.png") lightgray 50% ;
+
     background-repeat: no-repeat;
     background-size: cover;
-    height: fit-content;
+    width: 100%;
     border-radius: 12px;
     
     
@@ -404,6 +407,47 @@ main{
     width: 186px;
 }
 
+
+
+/* Footer Section Styles */
+.footer-container{
+    border-top: 1px solid rgba(0, 0, 0, 0.10);
+    background: rgba(255, 255, 255, 0.50);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 50px 160px;
+    
+}
+
+.footer-subtitle{
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 22px;
+    font-weight: 400;
+    width: 359px;
+    margin-top: 16px;
+}
+
+.footer-list-1 li ,.footer-list-2 li{
+    list-style: none;
+    margin-bottom: 32px;
+
+}
+.footer-list-1 a , .footer-list-2 a{
+    text-decoration: none;
+    color: #6B7280;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; 
+    
+}
+
+.footer-items img{
+    margin-right: 30px;
+    align-items: center;
+    
+}
 
 /* Responsive Styles For Mobile Device */
 @media screen and (max-width:576px) {
@@ -553,6 +597,27 @@ main{
         padding: 18px 30px;
     }
 
+
+    /* Footer Section Styles */
+
+    .footer-container{
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .footer-subtitle{
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .footer-list-1 a{
+
+    }
+
+    .footer-items img{
+        margin-right: 20px;
+    }
 }
 
 
@@ -699,5 +764,20 @@ main{
         width: 500px;
     }
   
+    /* Footer Section Styles */
 
+    .footer-container{
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 50px 50px;
+        gap: 30px;
+    }
+    .footer-subtitle{
+        font-size: 16px;
+        width: 250px;
+        line-height: 24px;
+    }
+
+   
 }
