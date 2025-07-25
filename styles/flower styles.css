@@ -48,6 +48,23 @@
     background-color: darkkhaki;
 }
 
+
+
+
+/* ANIMATION FOR TRUSTED PLANT BADGE */
+
+@keyframes badge-spin {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
 /* Header Style */
 header{
     background: #F5F8FF;
@@ -78,11 +95,14 @@ nav ul>li >a ,.cart{
     line-height: 24px; 
 }
 .list-home , .cart{
-    color: #000;
+    color: #252432;
 }
 
 .cart:hover{
-    color: #252432;
+    color: #8987A1;
+}
+.list-home:hover{
+    color: #8987A1;
 }
 
 nav li :hover{
@@ -202,8 +222,11 @@ main{
     width: 100%; 
 }
 
+
+
 .flower-badge-img{
     box-shadow:rgba(0, 0, 0, 0.25);
+    animation: badge-spin 3s ease-in-out infinite;
     position: absolute;
     width: 286px;
     /* height: 286px; */
@@ -213,6 +236,7 @@ main{
 .flower-lover-contents{
     align-items: left;
     width: 50%;
+    
     
  
 }
